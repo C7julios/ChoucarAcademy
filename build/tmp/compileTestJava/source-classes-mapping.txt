@@ -1,0 +1,4 @@
+co/com/choucair/certificacion/proyectobase/runners/RunnerTags.java
+ co.com.choucair.certificacion.proyectobase.runners.RunnerTags
+co/com/choucair/certificacion/proyectobase/stepdefinitions/ChoucairAcademyStepDefinitions.java
+ co.com.choucair.certificacion.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions

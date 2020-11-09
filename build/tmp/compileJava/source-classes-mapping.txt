@@ -1,0 +1,6 @@
+co/com/choucair/certificacion/proyectobase/userinterface/ChoucairAcademyPage.java
+ userinterface.ChoucairAcademyPage
+co/com/choucair/certificacion/proyectobase/tasks/OpenUp.java
+ tasks.OpenUp
+co/com/choucair/certificacion/proyectobase/tasks/Login.java
+ tasks.Login
