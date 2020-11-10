@@ -13,5 +13,4 @@ public class ChoucairLoginPage {
     public static final Target ENTER_BUTTON = Target.the("button to confirm login")
             .located(By.xpath("//button[contains(@class,'btn btn-primary')]"));
 
-
 }

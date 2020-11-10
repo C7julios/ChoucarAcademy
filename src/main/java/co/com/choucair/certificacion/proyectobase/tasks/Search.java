@@ -26,6 +26,3 @@ public class Search implements Task {
         actor.attemptsTo(Click.on(SearchCoursePage.SELECT_COURSE));
     }
 }
-  /* actor.attemptsTo(
-                WaitUntil.the(SearchCoursePage.INPUT_COURSE, isVisible())
-        );*/

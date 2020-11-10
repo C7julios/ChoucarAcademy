@@ -3,7 +3,7 @@ package co.com.choucair.certificacion.proyectobase.stepdefinitions;
 import co.com.choucair.certificacion.proyectobase.model.AcademyChoucairData;
 import co.com.choucair.certificacion.proyectobase.questions.Answer;
 import co.com.choucair.certificacion.proyectobase.tasks.Login;
-import co.com.choucair.certificacion.proyectobase.tasks.OpenUp;
+import co.com.choucair.certificacion.proyectobase.tasks.AbrirPagina;
 import co.com.choucair.certificacion.proyectobase.tasks.Search;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -20,7 +20,7 @@ public class ChoucairAcademyStepDefinitions {
 
     @Given("^than brandon wants to learn automation at the academy Choucair$")
     public void thanBrandonWantsToLearnAutomationAtTheAcademyChoucair(List<AcademyChoucairData> academyChoucairData) throws Exception {
-        OnStage.theActorCalled("Carlos").wasAbleTo(OpenUp.thePage(), (Login.
+        OnStage.theActorCalled("Carlos").wasAbleTo(AbrirPagina.thePage(), (Login.
                 onThePage(academyChoucairData.get(0).getStrUser(),academyChoucairData.get(0).getStrPassword())));
     }
 
@@ -36,25 +36,3 @@ public class ChoucairAcademyStepDefinitions {
     }
 }
 
-/*
-public class ChoucairAcademyStepDefinitions {
-    @Before
-    public void setStage(){ OnStage.setTheStage(new OnlineCast()); }
-
-    @Given("^than brandon wants to learn automation at the academy Choucair$")
-    public void thanBrandonWantsToLearnAutomationAtTheAcademyChoucair() {
-        OnStage.theActorCalled("Carlos").wasAbleTo(OpenUp.thePage(), (Login.onThePage()));
-    }
-
-    @When("^he search for the course (.*) on the Choucair Academy Platform$")
-    public void heSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(String course) {
-        OnStage.theActorInTheSpotlight().attemptsTo(Search.the(course));
-    }
-
-    @Then("^he finds the course called resources (.*)$")
-    public void heFindsTheCourseCalledResourcesRecursosAutomatizacionBancolombia(String question) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
-
-    }
-}
-*/
